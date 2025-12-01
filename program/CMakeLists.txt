@@ -6,9 +6,12 @@
 # 28 july 2014 Make VisualStudio Win32/Win64 detection automatic
 # 15.01.2015 Added tinycthread, nlopt, CImg, removed BLAS, LAPACK, GSL, lmfit, winpthread (R. Hiestand)
 
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 
 PROJECT(CMVS-PMVS2 C CXX)
+
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set (CMAKE_CXX_STANDARD 11)
 
